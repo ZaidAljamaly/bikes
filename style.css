@@ -5,7 +5,7 @@
 }
 .body{
     background-image:url("/black.png") ;
-    height: 55rem;
+    height: 1500px;
     background-size: cover;
     background-position: center;
     text-align:center;
@@ -13,113 +13,46 @@
     padding-bottom: 15rem;
     text-shadow: 3px 3px 10px black;
 }
-
-.navbar{
-    width: 100%;
-    margin: auto;
-    padding:35px 0;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    background-color:rgb(19, 18, 18);
-   
-
+.navbar-brand{
+    height:100px;
+    width: 100px;
 }
 
-
-.navbar ul li{
-    list-style:none;
-    display:inline-block;
-    margin: 0 20px;
-    position: relative;
-    
-}
-.navbar ul li a{
-    text-decoration:none;
-    color:rgb(247, 247, 247);
-    
-}
-.navbar ul li::after{
-    content:'';
-    height:3px;
-    width:100%;
-    background: #032db8;
-    left:0;
-    bottom: 0;
-    position: absolute;
-    
-}
-
-.logo{
-    width:100px;
-}
-
-.artical h1{
+.first{
     float:right;
-    width:300px;
-    color:rgb(255, 255, 255);
-    padding:12px 0;
-    margin-top:30px;
 }
-
-
 .card{
     width:200px;
     height:230px;
-    border-radius: 10px;
-    padding:15px 25px;
-    box-sizing:border-box;
-    cursor:pointer;
-    margin:10px 10px 10px 10px;
-    background-image:url('yamaha.jpg');
-    background-size: cover;
-    background-position:center;
-    float:left;
-    display:inline-block;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    clip-path:circle();
 }
-.card2{
-    background-image:url('kawasaki.jpg');
-    background-size: cover;
-    background-position:center;
-    width:200px;
-    height:230px;
-    border-radius: 10px;
-    padding:15px 25px;
-    box-sizing:border-box;
-    cursor:pointer;
-    margin:10px 10px 10px 10px;
-    display:inline-block;
-    float: left;
-    color: aliceblue;
+ .text-white{
+    text-decoration:none; 
+}
+.navbar-toggler-icon {
+    color:white;
 
 }
-.card3{
-    background-image:url('honda.jpg');
-    background-size: cover;
-    background-position:center;
-    width:200px;
-    height:230px;
-    border-radius: 10px;
-    padding:15px 25px;
-    box-sizing:border-box;
-    cursor:pointer;
-    margin:10px 10px 10px 10px;
-    display:inline-block;
-    float: left;
+.rr{
+    background-color:white !important;
+}
+.nav-item{
+    position:relative ;
 
 }
-.card4{
-    background-image:url('ducati.jpg');
-    background-size: cover;
-    background-position:center;
-    width:200px;
-    height:230px;
-    border-radius: 10px;
-    padding:15px 25px;
-    box-sizing:border-box;
-    cursor:pointer;
-    margin:10px 10px 10px 10px;
-    display:inline-block;
-    float: left;
-
+ul li::after{
+    content:'';
+    height:3px;
+    width:0;
+    background: #06039b;
+    left:0;
+    bottom: -12px;;
+    position: absolute;
+    transition: 0.3s;
+}
+ul li:hover::after{
+    width: 100%;
 }
